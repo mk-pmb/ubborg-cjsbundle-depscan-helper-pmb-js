@@ -27,6 +27,6 @@ test('Verify plans array', async(t) => {
   t.same(plans, [
     { fancy: 'cjs:p-tape' },
     { fancy: `cjs:"exotic" ' + "package 'name'` },
-    { fancy: `cjs:t even care about "inconsistent' quotes` } ,
+    { fancy: `cjs:t even care about "inconsistent' quotes` },
   ]);
 });

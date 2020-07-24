@@ -13,7 +13,7 @@ test('Usage example', async(t) => {
     },
   };
 
-  const bunPr = usageExample(bunStub);
+  usageExample(bunStub);
 
   const urdWa = 'cjs:ubborg-usecase-rescuedisk-pmb/src/workarounds/';
   t.same(relations, [
