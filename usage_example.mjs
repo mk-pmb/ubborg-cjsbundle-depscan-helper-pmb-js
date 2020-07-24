@@ -3,7 +3,7 @@ import relateCjsBundles from '.';
 
 export default async(bun) => {
   relateCjsBundles(bun, `
-    require('@types/ubborg-planner-pmb');
+    import plannerTypes from '@types/ubborg-planner-pmb';
     require('ubborg-usecase-rescuedisk-pmb/src/workarounds/');
   `);
 };
