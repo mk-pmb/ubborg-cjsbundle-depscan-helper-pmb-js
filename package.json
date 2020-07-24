@@ -1,5 +1,5 @@
 { "name": "ubborg-cjsbundle-depscan-helper-pmb",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Express CJS bundle dependencies in a way that can be picked up by naive dependency scanners.",
   "keywords": [],
 
@@ -20,10 +20,11 @@
   "scripts": { "test": "nodemjs test/all.mjs" },
   "directories": { "test": "test" },
 
-  "dependencies": {
-    "@types/ubborg-planner-pmb": "?unknown?",
-    "ubborg-usecase-rescuedisk-pmb": "^0.0.22"
-  },
+  "spuriousDependencies": [
+    "@types/ubborg-planner-pmb",
+    "ubborg-usecase-rescuedisk-pmb",
+    null
+  ],
 
   "devDependencies": {
     "nodemjs": "^0.1.8",
