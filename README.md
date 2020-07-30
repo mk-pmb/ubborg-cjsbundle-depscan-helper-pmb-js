@@ -15,10 +15,9 @@ API
 
 This module exports one function:
 
-### relateCjsBundles(bun, fakeCode[, kind])
+### relateCjsBundles(bun, fakeCode[, opt])
 
-Declares relations of ubborg bundle `bun` to CJS bundles.
-The `kind` of relation should be a string and defaults to `'needs'`.
+Declares relations (see `kind` below) of ubborg bundle `bun` to CJS bundles.
 The IDs of the related CJS bundles are obtained from `fakeCode`
 using an algorithm equivalent to:
 
@@ -33,6 +32,13 @@ using an algorithm equivalent to:
 
 Returns a Promise for an array of all related resource plans.
 
+`opt` is an optional options object that supports these keys:
+
+* `kind`: The kind of relation. Should be a string. Defaults to `'needs'`.
+* `nMin`: The minimum number of module IDs that are expected to be found
+  in `fakeCode`. Default: `1`
+
+`opt` may also be a non-empty string, in which case it is used as the `kind`.
 
 
 Usage

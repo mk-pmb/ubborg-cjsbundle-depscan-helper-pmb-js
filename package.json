@@ -1,5 +1,5 @@
 { "name": "ubborg-cjsbundle-depscan-helper-pmb",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Express CJS bundle dependencies in a way that can be picked up by naive dependency scanners.",
   "keywords": [],
 
